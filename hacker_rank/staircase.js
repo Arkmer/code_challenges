@@ -1,4 +1,5 @@
 console.log('staircase');
+console.log('Complete');
 
 // Build a staircase with the top stair on the right.
 // Built out of #s.
@@ -10,9 +11,10 @@ console.log('staircase');
 // | ###
 // |####
 
-staircaseMaker(10);
+staircaseMaker(50);
 
-function staircaseMaker(n) {
+function staircaseMaker(stairMax) {
+  let n = randomStairs(stairMax);
   for(let i = 0; i < n; i++) {
   let stair = ''
     for(let j = n - i - 1; j < n; j++) {
@@ -24,3 +26,7 @@ function staircaseMaker(n) {
   console.log(stair);
   }
 };
+
+function randomStairs(stairs) {
+  return Math.floor(Math.random() * Math.floor(stairs))
+}

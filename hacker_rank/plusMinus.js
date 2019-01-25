@@ -6,8 +6,6 @@ console.log('Complete');
 // 2. The decimal percentage of negative numbers in the array.
 // 3. The decimal percentage of zeros in the array.
 
-// Consoles in the function are for uploading to hacker rank.
-
 console.log(plusMinus(100))
 
 function plusMinus(x) {
@@ -27,9 +25,6 @@ function plusMinus(x) {
     Number.isNaN(totals.neg/totals.tot) ? 0 : totals.neg/totals.tot,
     Number.isNaN(totals.zer/totals.tot) ? 0 : totals.zer/totals.tot,
   );
-  // console.log(Number.isNaN(totals.pos/totals.tot) ? 0 : totals.pos/totals.tot);
-  // console.log(Number.isNaN(totals.neg/totals.tot) ? 0 : totals.neg/totals.tot);
-  // console.log(Number.isNaN(totals.zer/totals.tot) ? 0 : totals.zer/totals.tot);
   return output;
 };
 
