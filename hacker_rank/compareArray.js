@@ -1,6 +1,8 @@
 console.log('compareArray');
 console.log('Complete');
 
+// Given an array for Alice and an array for Bob, compare the two and decide who has the higher corresponding numbers.
+
 aliceTrip = [1, 2, 3];
 bobTrip = [3, 2, 1];
 
