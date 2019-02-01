@@ -1,4 +1,5 @@
 console.log('highNumberFrequency');
+console.log('Complete');
 
 // Find the number of times the highest number is used in an array.
 
