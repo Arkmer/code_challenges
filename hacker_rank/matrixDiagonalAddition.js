@@ -11,13 +11,12 @@ function diagonalAdder(arraySize) {
   let lowHigh = 0;
   for (let row in arr) {
       highLow = highLow + arr[row][row];
-      // console.log('highLow', highLow);
   }
   for (let row in arr) {
       lowHigh = lowHigh + arr[row][row.length - (row - (arr.length - 2))];
-      // console.log('lowHigh', lowHigh);
   }
-  console.log(Math.abs(highLow - lowHigh));
+  console.log('highLow', highLow);
+  console.log('lowHigh', lowHigh);
   return Math.abs(highLow - lowHigh);
 }
 
@@ -36,4 +35,15 @@ function matrixGenerator(max) {
   return(finalArray);
 }
 
-console.log(diagonalAdder(1000));
+console.log(diagonalAdder(6));
+
+function averageFinder(times){
+  let compiledArray = new Array();
+  for(let i=0; i<times; i++){
+    compiledArray.push(diagonalAdder(6))
+  };
+  console.log(compiledArray);
+  return compiledArray.reduce((acc, cur) => acc + cur)/times;
+};
+
+// console.log(averageFinder(1000));
